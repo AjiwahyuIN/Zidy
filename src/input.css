@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: graphik, system-ui, sans-serif;
+  }
+}
+
+.colorPrimary-100 {
+  @apply bg-[#4EC1B60F];
+}
+
+.colorPrimary-200 {
+  @apply bg-[#DCF3F0];
+}
+
+.colorPrimary-300 {
+  @apply bg-[#4EC1B6];
+}
+
+.colorPrimary-300-hover {
+  @apply hover:bg-[#4EC1B6];
+}
+
+.borderColor {
+  @apply border-[#F4F6FA];
+}
+
+.fontColorDefault {
+  @apply text-[#000000];
+}
+.selectDropdown {
+  outline: none !important;
+}
+.selectDropdown::focus {
+  outline: none !important;
+}
+
+.chart__content__box {
+  min-width: 50% !important;
+}

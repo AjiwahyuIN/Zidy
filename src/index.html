@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <aside class="">
+    <div class="sidebar fixed colorPrimary-100 pt-6 pl-5 pr-5 pb-8 h-screen top-0 left-0 flex flex-col justify-between max-w-[90px] z-50">
+        <div class="sidebar__menu">
+            <div class="sidebar__menu__brand mb-[54px]">
+                <img src="./img/logobrand.svg" alt="">
+            </div>
+            <div class="sidebar__menu__wrapper">
+                <a class="sidebar__menu__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
+                    <img src="./img/menu-item-1.svg" alt="menu-item-1">
+                </a>
+            </div>
+            <div class="sidebar__menu__wrapper">
+                <a class="sidebar__menu__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
+                    <img src="./img/menu-item-2.svg" alt="menu-item-1">
+                </a>
+            </div>
+            <div class="sidebar__menu__wrapper">
+                <a class="sidebar__menu__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
+                    <img src="./img/menu-item-3.svg" alt="menu-item-1">
+                </a>
+            </div>
+            <div class="sidebar__menu__wrapper">
+                <a class="sidebar__menu__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
+                    <img src="./img/menu-item-4.svg" alt="menu-item-1">
+                </a>
+            </div>
+        </div>
+        <div class="sidebar__setting">
+            <div class="sidebar__setting__wrapper">
+                <a class="sidebar__setting__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition">
+                    <img src="./img/menu-item-4.svg" alt="menu-item-1">
+                </a>
+            </div>
+        </div>
+    </div>
+  </aside>
+  <main class="ml-[90px]">
+    <header>
+        <div class="header flex flex-row justify-between items-center pb-6 pt-6 pl-8 pr-8 border-b borderColor">
+            <div class="header__title">
+                <a href="#" class="text-[28px] leading-[31px] fontColorDefault font-medium">Analytics</a>
+            </div>
+            <div class="header__menu flex items-center">
+                <div class="header__menu__icon mr-4">
+                    <a href="#" class="header__menu__icon__wrapper">
+                        <img src="./img/google-icon.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__menu__icon mr-6">
+                    <a href="#" class="header__menu__icon__wrapper">
+                        <img src="./img/notif-icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pl-8">
+        <div class="chart">
+            <div class="chart__header flex justify-between items-center pb-6">
+                <h3 class="chart__header__text">
+                    Statistic
+                </h3>
+                <div class="chart__header__menu flex">
+                    <div class="dropdown ">
+                        <select name="contact" id="contact" class="mr-2 p-4 border rounded-[6px]">
+                            <option value="contact">Contact</option>
+                            <option value="contact">dfefdfd</option>
+                            <option value="contact">Contact</option>
+                        </select>
+                    </div>
+                    <div class="dropdown">
+                        <select name="contact" id="contact" class="p-4 border rounded-[6px] mr-2">
+                            <option value="contact">Contact</option>
+                            <option value="contact">Contact</option>
+                            <option value="contact">Contact</option>
+                        </select>
+                    </div>
+                    <div class="layout flex">
+                        <a href="#" class=" twoCol border borderColor rounded-[4px] flex justify-center items-center mr-2">
+                            <img src="./img/row.svg" alt="">
+                        </a>
+                        <a href="#" class="oneCol border borderColor rounded-[4px] flex justify-center items-center">
+                            <img src="./img/col.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="chart__content flex w-[100%] justify-between transition ease-in-out delay-150 duration-300">
+                <div class="chart__content__box p-6 rounded-2xl border borderColor w-min-[50%]" style="width: 49%">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                      </div>
+                </div>
+                <div class="chart__content__box--two p-6 rounded-2xl border borderColor w-max" style="width: 49%">
+                    <div>
+                        <canvas id="twoChart"></canvas>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
