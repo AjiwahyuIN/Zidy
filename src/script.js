@@ -1,3 +1,5 @@
+//chartjs
+
 const labels = [
     'AAA',
     'BBB',
@@ -98,7 +100,7 @@ const labels = [
     daily
   );
 
- 
+
 
 const twoCol = document.querySelector('.twoCol');
 const oneCol = document.querySelector('.oneCol');
@@ -116,10 +118,10 @@ oneCol.addEventListener('click', function(){
     document.querySelector('.chart__content__box--two').style.width = '100%';
 })
 
-const dropdown = document.querySelector('.dropdown');
-// const dropdownC = document.querySelector('.dropdown-contact');
-// const dropdownC = document.querySelector('.dropdown-monthly');
 
+//dropdown
+
+const dropdown = document.querySelector('.dropdown');
 
 function dropdownContact() {
   var element = document.getElementById("dropdown-contact");
