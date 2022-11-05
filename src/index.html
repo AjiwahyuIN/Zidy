@@ -14,30 +14,33 @@
                 <img src="./img/logobrand.svg" alt="">
             </div>
             <div class="sidebar__menu__wrapper">
-                <a class="sidebar__menu__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
-                    <img src="./img/menu-item-1.svg" alt="menu-item-1">
+                <a class="sidebar__menu__wrapper__item--1 flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
+                                          
                 </a>
             </div>
             <div class="sidebar__menu__wrapper">
-                <a class="sidebar__menu__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
-                    <img src="./img/menu-item-2.svg" alt="menu-item-1">
+                <a class="sidebar__menu__wrapper__item--2 flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
+
                 </a>
             </div>
             <div class="sidebar__menu__wrapper">
-                <a class="sidebar__menu__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
-                    <img src="./img/menu-item-3.svg" alt="menu-item-1">
+                <a class="sidebar__menu__wrapper__item--3 flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
+
                 </a>
             </div>
             <div class="sidebar__menu__wrapper">
-                <a class="sidebar__menu__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
-                    <img src="./img/menu-item-4.svg" alt="menu-item-1">
+                <a class="sidebar__menu__wrapper__item--4 flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition mb-2">
+
                 </a>
             </div>
         </div>
         <div class="sidebar__setting">
             <div class="sidebar__setting__wrapper">
-                <a class="sidebar__setting__wrapper__item flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition">
-                    <img src="./img/menu-item-4.svg" alt="menu-item-1">
+                <a class="sidebar__setting__wrapper__item--1 flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition">
+
+                </a>
+                <a class="sidebar__setting__wrapper__item--2 flex items-start justify-center p-3 rounded-[8px] bg-transparent colorPrimary-300-hover cursor-pointer transition">
+
                 </a>
             </div>
         </div>
@@ -45,7 +48,7 @@
   </aside>
   <main class="ml-[90px]">
     <header>
-        <div class="header flex flex-row justify-between items-center pb-6 pt-6 pl-8 pr-8 border-b borderColor">
+        <div class="header flex flex-row justify-between items-center pl-8 pr-8 pb-6 pt-6 border-b borderColor">
             <div class="header__title">
                 <a href="#" class="text-[28px] leading-[31px] fontColorDefault font-medium">Analytics</a>
             </div>
@@ -60,36 +63,126 @@
                         <img src="./img/notif-icon.svg" alt="">
                     </a>
                 </div>
+                <div class="header__menu__profile flex">
+                    <div class="header__menu__profile__avatar mr-4">
+                        <img src="./img/avatar.png" alt="">
+                    </div>
+                    <div class="header__menu__profile__text flex">
+                        <div class="name-wrapper flex flex-col">
+                            <span class="text-[#676F7E] font-[16px]">Welcome</span>
+                            <span class="font-medium font-[16px]">Danis Markonez</span>
+                        </div>
+                        <div class="icon-wrapper flex items-center ml-2">
+                            <img src="./img/dropdown.svg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <section class="pl-8">
-        <div class="chart">
-            <div class="chart__header flex justify-between items-center pb-6">
-                <h3 class="chart__header__text">
+    <section>
+        <div class="cards pl-8 pr-8 mt-5 mb-10 flex flex-row justify-between">
+            <div class="cards__card flex flex-row justify-start zidyOrange rounded-[12px] p-4 w-[24%]">
+                <div class="cards__card__icon bg-white p-5 rounded-[12px] mr-4">
+                    <img src="./img/contact.svg" alt="">
+                </div>
+                <div class="cards__card__info flex flex-col items-start justify-center">
+                    <span class="text-base font-normal leading-4">Contact</span>
+                    <div class="card-value mt-2 flex">
+                        <div class="card-value__number flex items-center">
+                            <span class="text-[32px] font-medium">643</span>
+                        </div>
+                        <div class="card-value__text flex items-center pl-2">
+                            <span class="font-normal text-normal">Total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards__card flex flex-row justify-start colorPrimary-200 rounded-[12px] p-4 w-[24%]">
+                <div class="cards__card__icon bg-white p-5 rounded-[12px] mr-4">
+                    <img src="./img/contact-2.svg" alt="">
+                </div>
+                <div class="cards__card__info flex flex-col items-start justify-center">
+                    <span class="text-base font-normal leading-4">Review Invites</span>
+                    <div class="card-value mt-2 flex">
+                        <div class="card-value__number flex items-center">
+                            <span class="text-[32px] font-medium">643</span>
+                        </div>
+                        <div class="card-value__text flex items-center pl-2">
+                            <span class="font-normal text-normal">Total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards__card flex flex-row justify-start zidyBlue rounded-[12px] p-4 w-[24%]">
+                <div class="cards__card__icon bg-white p-5 rounded-[12px] mr-4">
+                    <img src="./img/contact-3.svg" alt="">
+                </div>
+                <div class="cards__card__info flex flex-col items-start justify-center">
+                    <span class="text-base font-normal leading-4">Messages Sent</span>
+                    <div class="card-value mt-2 flex">
+                        <div class="card-value__number flex items-center">
+                            <span class="text-[32px] font-medium">643</span>
+                        </div>
+                        <div class="card-value__text flex items-center pl-2">
+                            <span class="font-normal text-normal">Total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards__card flex flex-row justify-start zidyBrown rounded-[12px] p-4 w-[24%]">
+                <div class="cards__card__icon bg-white p-5 rounded-[12px] mr-4">
+                    <img src="./img/contact-4.svg" alt="">
+                </div>
+                <div class="cards__card__info flex flex-col items-start justify-center">
+                    <span class="text-base font-normal leading-4">Messages Recieved</span>
+                    <div class="card-value mt-2 flex">
+                        <div class="card-value__number flex items-center">
+                            <span class="text-[32px] font-medium">643</span>
+                        </div>
+                        <div class="card-value__text flex items-center pl-2">
+                            <span class="font-normal text-normal">Total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="chart pl-8 pr-8">
+            <div class="chart__header flex justify-between items-center mb-6">
+                <h3 class="chart__header__text text-[24px] font-medium">
                     Statistic
                 </h3>
                 <div class="chart__header__menu flex">
-                    <div class="dropdown ">
-                        <select name="contact" id="contact" class="mr-2 p-4 border rounded-[6px]">
-                            <option value="contact">Contact</option>
-                            <option value="contact">dfefdfd</option>
-                            <option value="contact">Contact</option>
-                        </select>
+                    <div class="dropdown-contact-wrapper relative">
+                        <div class="dropdown cursor-pointer flex justify-between mr-2 p-4 border borderColor-200 rounded-[6px] min-w-[150px] fontColorPrimary-300-hover" onclick="dropdownContact()">
+                            <span>Contact</span>
+                            <img src="./img/dropdown.svg" alt="">
+                        </div>
+                        <div id="dropdown-contact" class="dropdown-contact pt-2 pb-2 rounded-[8px] bg-white shadow-xl absolute flex flex-col border borderColor-200">
+                            <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
+                            <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
+                        </div>
                     </div>
-                    <div class="dropdown">
-                        <select name="contact" id="contact" class="p-4 border rounded-[6px] mr-2">
-                            <option value="contact">Contact</option>
-                            <option value="contact">Contact</option>
-                            <option value="contact">Contact</option>
-                        </select>
+                    <div class="dropdown-monthly-wrapper relative">
+                        <div class="dropdown cursor-pointer flex justify-between mr-2 p-4 border borderColor-200 rounded-[6px] min-w-[150px] fontColorPrimary-300-hover" onclick="dropdownMonthly()">
+                            <span>Monthly</span>
+                            <img src="./img/dropdown.svg" alt="">
+                        </div>
+                        <div id="dropdown-monthly" class="dropdown-monthly pt-2 pb-2 rounded-[8px] bg-white shadow-xl absolute flex flex-col border borderColor-200">
+                            <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
+                            <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
+                        </div>
                     </div>
-                    <div class="layout flex">
-                        <a href="#" class=" twoCol border borderColor rounded-[4px] flex justify-center items-center mr-2">
-                            <img src="./img/row.svg" alt="">
+                    
+                   
+                    <div class="layout flex border borderColor-200 rounded-[4px] pl-2 pr-2 justify-center items-center">
+                        <a href="#" class="twoCol flex justify-center items-center mr-2 colorPrimary-300-hover rounded-[6px] ">
+
                         </a>
-                        <a href="#" class="oneCol border borderColor rounded-[4px] flex justify-center items-center">
-                            <img src="./img/col.svg" alt="">
+                        <a href="#" class="oneCol flex justify-center items-center colorPrimary-300-hover rounded-[6px] ">
+
                         </a>
                     </div>
                 </div>
