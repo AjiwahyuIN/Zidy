@@ -22,16 +22,17 @@
 }
 
 .colorPrimary-300-hover {
-  @apply hover:bg-[#4EC1B6];
+  /* @apply hover: bg-[#4EC1B6]; */
 }
 
 .fontColorPrimary-300-hover {
-  @apply hover:text-[#4EC1B6];
+  /* @apply hover:text-[#4EC1B6]; */
 }
 
 .borderColor {
   @apply border-[#F4F6FA];
 }
+
 .borderColor-200 {
   @apply border-[#D8D8D8];
 }
@@ -43,15 +44,19 @@
 .zidyOrange {
   @apply bg-[#FDB53C1A];
 }
+
 .zidyBlue {
   @apply bg-[#DCEFFA];
 }
+
 .zidyBrown {
   @apply bg-[#F8F6F2];
 }
+
 .selectDropdown {
   outline: none !important;
 }
+
 .selectDropdown::focus {
   outline: none !important;
 }
@@ -75,6 +80,7 @@
   width: 48px;
   height: 48px;
 }
+
 .sidebar__menu__wrapper__item--3 {
   background-image: url("./img/menu-item-3.svg");
   background-repeat: no-repeat;
@@ -82,6 +88,7 @@
   width: 48px;
   height: 48px;
 }
+
 .sidebar__menu__wrapper__item--4 {
   background-image: url("./img/menu-item-4.svg");
   background-repeat: no-repeat;
@@ -89,6 +96,7 @@
   width: 48px;
   height: 48px;
 }
+
 .sidebar__menu__wrapper__item--1:hover {
   background-image: url("./img/menu-item-1-w.svg");
 }
@@ -96,9 +104,11 @@
 .sidebar__menu__wrapper__item--2:hover {
   background-image: url("./img/menu-item-2-w.svg");
 }
+
 .sidebar__menu__wrapper__item--3:hover {
   background-image: url("./img/menu-item-3-w.svg");
 }
+
 .sidebar__menu__wrapper__item--4:hover {
   background-image: url("./img/menu-item-4-w.svg");
 }
@@ -122,6 +132,7 @@
 .sidebar__setting__wrapper__item--1:hover {
   background-image: url("./img/set-ic-1-w.svg");
 }
+
 .sidebar__setting__wrapper__item--2:hover {
   background-image: url("./img/set-ic-2-w.svg");
 }
@@ -177,3 +188,34 @@
     /* flex-direction: column; */
   }
 }
+
+
+/* Toggle Burger Menu */
+.burger__menu--active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.burger__menu--active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger__menu--active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* End Toogle Burger Menu */
+
+/* Sidebar Mobile */
+/* .sidebar__mobile .sidebar {
+  height: calc(100vh - 89px);
+} */
+
+.sidebar__mobile {
+  @apply -left-full;
+}
+
+.sidebar__mobile.active {
+  @apply left-0 bg-[#DCF3F0];
+}
+
+/* End Sidebar Mobile */

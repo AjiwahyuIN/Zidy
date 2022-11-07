@@ -132,3 +132,23 @@ function dropdownMonthly() {
   var element = document.getElementById("dropdown-monthly");
   element.classList.toggle("dropdown-monthly-active");
 }
+
+
+// TODO:: Logic for the toogle burger menu
+const btnBurgerMenu = document.querySelector('.burger__menu');
+
+btnBurgerMenu.addEventListener('click', function(){
+  this.classList.toggle('burger__menu--active');
+  document.querySelector('aside.sidebar__mobile').classList.toggle('active');
+})
+
+// add function to detect resize
+window.addEventListener('resize', function(){
+  if(window.innerWidth < 768){
+      document.querySelector('aside').classList.add('sidebar__mobile');
+    } else {
+      document.querySelector('aside.sidebar__mobile').classList.remove('active');
+      btnBurgerMenu.classList.remove('burger__menu--active');
+      document.querySelector('aside').classList.remove('sidebar__mobile');
+  }
+})
