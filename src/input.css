@@ -26,7 +26,7 @@
 }
 
 .fontColorPrimary-300-hover {
-  /* @apply hover:text-[#4EC1B6]; */
+  /* @apply hover: text-[#4EC1B6]; */
 }
 
 .borderColor {
@@ -215,7 +215,8 @@
 }
 
 .sidebar__mobile.active {
-  @apply left-0 bg-[#DCF3F0];
+  @apply left-0;
+  background: #DCF3F0;
 }
 
 /* End Sidebar Mobile */
