@@ -172,6 +172,29 @@
   opacity: 1 !important;
 }
 
+.dropdown-filter {
+  opacity: 0;
+}
+
+.dropdown-filter-active {
+  bottom: -100px;
+  left: 0;
+  transition: opacity 300ms ease-out;
+  opacity: 1 !important;
+}
+
+.dropdown-profile {
+  opacity: 0;
+  /* width: 210px; */
+}
+
+.dropdown-profile-active {
+  bottom: -110px;
+  right: 0;
+  transition: opacity 300ms ease-out;
+  opacity: 1 !important;
+}
+
 @media only screen and (max-width: 600px) {
   .cards {
     /* flex-direction: column; */

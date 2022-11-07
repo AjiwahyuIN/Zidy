@@ -122,6 +122,7 @@ oneCol.addEventListener('click', function(){
 //dropdown
 
 const dropdown = document.querySelector('.dropdown');
+const filter = document.querySelector('.filter');
 
 function dropdownContact() {
   var element = document.getElementById("dropdown-contact");
@@ -131,4 +132,14 @@ function dropdownContact() {
 function dropdownMonthly() {
   var element = document.getElementById("dropdown-monthly");
   element.classList.toggle("dropdown-monthly-active");
+}
+
+function dropdownFilter() {
+  var element = document.getElementById("dropdown-filter");
+  element.classList.toggle("dropdown-filter-active");
+}
+
+function dropdownProfile() {
+  var element = document.getElementById("dropdown-profile");
+  element.classList.toggle("dropdown-profile-active");
 }

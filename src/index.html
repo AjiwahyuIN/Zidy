@@ -56,15 +56,15 @@
             <div class="header__menu flex items-center">
                 <div class="header__menu__icon mr-4">
                     <a href="#" class="header__menu__icon__wrapper">
-                        <img src="./img/google-icon.svg" alt="">
+                        <img src="./img/google.svg" alt="">
                     </a>
                 </div>
                 <div class="header__menu__icon mr-6">
                     <a href="#" class="header__menu__icon__wrapper">
-                        <img src="./img/notif-icon.svg" alt="">
+                        <img src="./img/bell.svg" alt="">
                     </a>
                 </div>
-                <div class="header__menu__profile flex">
+                <div class="header__menu__profile flex relative cursor-pointer" onclick="dropdownProfile()">
                     <div class="header__menu__profile__avatar mr-4">
                         <img src="./img/avatar.png" alt="">
                     </div>
@@ -77,6 +77,10 @@
                             <img src="./img/dropdown.svg" alt="">
                         </div>
                     </div>
+                    <div id="dropdown-profile" class="dropdown-profile pt-2 pb-2 rounded-[8px] bg-white w-full shadow-xl absolute flex flex-col border borderColor-200">
+                        <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
+                        <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,7 +92,7 @@
         <div class="cards pl-8 pr-8 mt-5 mb-10 sm:flex sm:flex-row sm:justify-center justify-between">
             <div class="cards__card flex flex-row justify-start zidyOrange rounded-[12px] p-4 md:w-[24%] w-full md:mb-0 mb-4">
                 <div class="cards__card__icon bg-white p-5 rounded-[12px] mr-4">
-                    <img src="./img/contact.svg" alt="">
+                    <img src="./img/contact-new.svg" alt="">
                 </div>
                 <div class="cards__card__info flex flex-col items-start justify-center">
                     <span class="text-base font-normal leading-4">Contact</span>
@@ -104,7 +108,7 @@
             </div>
             <div class="cards__card flex flex-row justify-start colorPrimary-200 rounded-[12px] p-4 md:w-[24%] w-full md:mb-0 mb-4">
                 <div class="cards__card__icon bg-white p-5 rounded-[12px] mr-4">
-                    <img src="./img/contact-2.svg" alt="">
+                    <img src="./img/review-new.svg" alt="">
                 </div>
                 <div class="cards__card__info flex flex-col items-start justify-center">
                     <span class="text-base font-normal leading-4">Review Invites</span>
@@ -120,7 +124,7 @@
             </div>
             <div class="cards__card flex flex-row justify-start zidyBlue rounded-[12px] p-4 md:w-[24%] w-full md:mb-0 mb-4">
                 <div class="cards__card__icon bg-white p-5 rounded-[12px] mr-4">
-                    <img src="./img/contact-3.svg" alt="">
+                    <img src="./img/message-new.svg" alt="">
                 </div>
                 <div class="cards__card__info flex flex-col items-start justify-center">
                     <span class="text-base font-normal leading-4">Messages Sent</span>
@@ -136,7 +140,7 @@
             </div>
             <div class="cards__card flex flex-row justify-start zidyBrown rounded-[12px] p-4 md:w-[24%] w-full md:mb-0 mb-4">
                 <div class="cards__card__icon bg-white p-5 rounded-[12px] mr-4">
-                    <img src="./img/contact-4.svg" alt="">
+                    <img src="./img/message-brown.svg" alt="">
                 </div>
                 <div class="cards__card__info flex flex-col items-start justify-center">
                     <span class="text-base font-normal leading-4">Messages Recieved</span>
@@ -158,13 +162,23 @@
                 <h3 class="chart__header__text text-[24px] font-medium">
                     Statistic
                 </h3>
-                <div class="chart__header__menu flex">
+                <div class="filter__wrapper block md:hidden relative cursor-pointer">
+                    <div class="filter flex justify-between mr-2 p-4 border borderColor-200 rounded-[6px] min-w-[150px]" onclick="dropdownFilter()">
+                        <span>Filter</span>
+                        <img src="./img/dropdown.svg" alt="">
+                    </div>
+                    <div id="dropdown-filter" class="dropdown-filter pt-2 pb-2 rounded-[8px] bg-white w-full shadow-xl absolute flex flex-col border borderColor-200">
+                        <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
+                        <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
+                    </div>
+                </div>
+                <div class="chart__header__menu hidden md:flex">
                     <div class="dropdown-contact-wrapper relative hidden md:block">
                         <div class="dropdown cursor-pointer flex justify-between mr-2 p-4 border borderColor-200 rounded-[6px] min-w-[150px] fontColorPrimary-300-hover" onclick="dropdownContact()">
                             <span>Contact</span>
                             <img src="./img/dropdown.svg" alt="">
                         </div>
-                        <div id="dropdown-contact" class="dropdown-contact pt-2 pb-2 rounded-[8px] bg-white shadow-xl absolute flex flex-col border borderColor-200">
+                        <div id="dropdown-contact" class="dropdown-contact pt-2 pb-2 rounded-[8px] bg-white shadow-xl w-11/12 absolute flex flex-col border borderColor-200">
                             <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
                             <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
                         </div>
@@ -174,7 +188,7 @@
                             <span>Monthly</span>
                             <img src="./img/dropdown.svg" alt="">
                         </div>
-                        <div id="dropdown-monthly" class="dropdown-monthly pt-2 pb-2 rounded-[8px] bg-white shadow-xl absolute flex flex-col border borderColor-200">
+                        <div id="dropdown-monthly" class="dropdown-monthly pt-2 pb-2 rounded-[8px] bg-white shadow-xl w-11/12 absolute flex flex-col border borderColor-200">
                             <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
                             <a class="cursor-pointer pt-2 pb-2 pl-4 pr-4 fontColorPrimary-300-hover">test</a>
                         </div>
