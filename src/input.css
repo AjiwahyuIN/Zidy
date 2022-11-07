@@ -1,4 +1,4 @@
-@import "./output.css";
+@import "../dist/output.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -211,7 +211,6 @@
     /* flex-direction: column; */
   }
 }
-
 
 /* Toggle Burger Menu */
 .burger__menu--active span:nth-child(1) {
